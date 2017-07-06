@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <style>
+    @font-face {
+      font-family: 'MyWebFont';
+      src: url('Forza-Book.otf');
+      /* IE9 Compat Modes */
+      src: url('Forza-Medium.otf'), /* IE6-IE8 */
+    }
+    body {
+      font-family: 'MyWebFont', Fallback, sans-serif;
+    }
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+    }
+
+    .main-container>div {
+
+      text-align: center;
+      flex: 1;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .button1 {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      color: white;
+      height: 8vh;
+      background-color: #9ccf8a;
+    }
+
+    .button2 {
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      color: white;
+      height: 8vh;
+      background-color: #9E9E9E;
+    }
+   .img-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+    .img{
+
+
+      height: 32vh;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .form-container {
+
+          margin-left: 43px;
+          letter-spacing: 3px;
+      display: flex;
+      align-items: center;
+          width: 100%;
+        color:  #9e9e9e;
+    }
+
+    input {
+
+      color: #9ccf8a;
+      margin-left: 10%;
+      width: 100%;
+      height: 28px;
+      border: 0px solid;
+      border-bottom: 1px solid;
+      border-color: #9e9e9e;
+          font-size: 1.2rem;
+    }
+  </style>
+  <title>flex-test</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="img-container">
+      <img class="img" src="logo-whitebg.png" alt="">
+    </div>
+    <div class="form">
+      <div class="form-container">
+        <h5 style="flex:1">Email</h5>
+        <input style="flex:2"type="email" name="" value="">
+      </div>
+      <div class="form-container">
+        <h5 style="flex:1">Password</h5>
+        <input  style="flex:2" type="password" name="" value="">
+      </div>
+
+    </div>
+    <div class="button-container">
+      <div class="button1">
+        <h4>SIGN IN</h4></div>
+      <div class="button2">
+        <h4>SIGN UP</h4></div>
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>
